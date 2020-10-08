@@ -1,0 +1,15 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+    <head></head>
+    <body>
+        <h1>WELCOME TO THE BETA EXPERIENCE</h1>
+        <h2>
+            <span th:inline="text">Hello, [[${username}]]!</span>
+        </h2>
+        <p/>
+        Here are your roles:
+        <br/>
+        <ul th:each="role : ${roles}">
+            <li th:inline="text">[[${role}]]</li>
+        </ul>
+    </body>
+</html>
